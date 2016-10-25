@@ -15,6 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('public', function () {
-    return view('p');
-});
+Route::get('login','LoginController@getLogin');
+Route::post('login','LoginController@postLogin');
+// Route::get('','HomeController@getIndex');
